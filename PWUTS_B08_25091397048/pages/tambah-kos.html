@@ -1,0 +1,15 @@
+<div class="page" data-fragment="tambah-kos">
+  <div class="page-header"><div><p class="eyebrow">FORMULIR INFORMASI KOS</p><h1 id="form-title">Tambah <em>Kos Baru</em></h1><p id="form-subtitle">Lengkapi informasi untuk mendaftarkan properti kos dalam sistem.</p></div><button type="button" class="btn btn-ghost" data-go="daftar-kos">← Lihat daftar kos</button></div>
+  <div class="form-grid">
+    <section class="surface form-box"><div class="form-banner"><span class="step-number">01</span><div><p class="eyebrow">DATA PROPERTI</p><h2>Informasi dasar kos</h2><p>Kolom bertanda * wajib diisi dengan benar.</p></div></div>
+      <form id="form-kos" novalidate>
+        <div class="field"><label for="nama_kos">Nama Kos <span>*</span></label><input type="text" id="nama_kos" name="nama_kos" maxlength="120" placeholder="Contoh: Kos Bintang Timur" autocomplete="off" required><small class="field-help">Gunakan nama properti yang mudah dikenali (3–120 karakter).</small><p class="field-error" id="error-nama_kos"></p></div>
+        <div class="field"><label for="alamat">Alamat Lengkap <span>*</span></label><textarea id="alamat" name="alamat" rows="3" maxlength="1000" placeholder="Contoh: Jalan Melati No. 12, Surabaya" required></textarea><small class="field-help">Tulis alamat dengan jelas (minimal 10 karakter).</small><p class="field-error" id="error-alamat"></p></div>
+        <div class="field"><label for="deskripsi">Deskripsi Kos <span class="optional">Opsional</span></label><textarea id="deskripsi" name="deskripsi" rows="5" maxlength="1000" placeholder="Ceritakan lokasi, fasilitas, atau keunggulan kos..."></textarea><small class="field-help">Maksimal 1.000 karakter. Tidak mencakup transaksi pembayaran online.</small><p class="field-error" id="error-deskripsi"></p></div>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        <div class="form-bottom"><button type="reset" class="btn btn-ghost" id="reset-btn">Bersihkan</button><button type="submit" class="btn btn-accent" id="submit-btn">Simpan Data Kos <span aria-hidden="true">↗</span></button></div>
+      </form>
+    </section>
+    <aside class="form-sidebar"><div class="surface owner-card"><span class="owner-icon" aria-hidden="true">⌂</span><p class="eyebrow">PEMILIK TERPILIH</p><h3>Pemilik Kos Demo</h3><p>Untuk simulasi, setiap kos menggunakan <code>id_pemilik = 1</code>. Data disimpan melalui JavaScript di browser.</p><div class="owner-status"><span class="status-dot"></span> Mode demo lokal</div></div><div class="surface checklist"><h3>Tips pengisian</h3><div class="checkline"><span>✓</span><p>Nama kos ditulis jelas dan singkat.</p></div><div class="checkline"><span>✓</span><p>Alamat kos dilengkapi nama jalan dan wilayah.</p></div><div class="checkline"><span>✓</span><p>Deskripsi menjelaskan informasi penting kos.</p></div><div class="checkline"><span>✓</span><p>Data divalidasi sebelum disimpan di browser.</p></div></div></aside>
+  </div>
+</div>
