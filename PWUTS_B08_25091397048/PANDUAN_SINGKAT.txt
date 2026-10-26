@@ -1,9 +1,0 @@
-RuangKos Dava — HTML, CSS, JavaScript MURNI
-
-1. Extract ZIP dan letakkan folder PWUTS_B08_25091397048 di C:\xampp\htdocs\
-2. Jalankan Apache (MySQL tidak perlu).
-3. Buka http://localhost/PWUTS_B08_25091397048/
-4. Data tambah/edit tersimpan lewat localStorage browser.
-5. Tanpa PHP, API, Bootstrap, dan koneksi MySQL.
-
-PERHATIAN: Versi tanpa backend ini belum memenuhi butir UTS 2.c mengenai form submit ke server HTTP.
