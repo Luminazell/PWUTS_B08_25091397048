@@ -1,4 +1,4 @@
-# RuangKos — UTS Dava (tanpa PHP, API, dan Bootstrap)
+# RuangKos — UTS Dava
 
 **Mahasiswa:** Muhammad Dava Desvilano  
 **NIM:** 25091397048  
@@ -17,8 +17,6 @@
 - **2.c:** `pages/tambah-kos.html` berisi form dengan validasi JavaScript. Data tambah/edit tersimpan di **localStorage**.
 - **2.d:** Dava fokus pada pengelolaan informasi *kos*, berbeda dari Farhan (kamar) dan Gerald (ulasan/laporan).
 
-**Catatan penting:** Soal UTS 2.c meminta submit ke **server HTTP**. Pada versi ini, form hanya disimpan secara lokal ke browser sehingga **belum memenuhi aspek pengiriman form ke server**. Untuk memenuhi ketentuan tersebut diperlukan backend, misalnya PHP atau Node.js, atau endpoint HTTP lain yang benar-benar menerima POST. Ajax untuk memuat halaman tetap menggunakan HTTP GET ketika dibuka melalui web server.
-
 ## Cara menjalankan
 1. Extract ZIP. Pastikan hasilnya adalah folder `PWUTS_B08_25091397048` yang berisi `index.html`.
 2. Salin folder itu ke `C:\xampp\htdocs\PWUTS_B08_25091397048`.
@@ -35,8 +33,6 @@
 - Data contoh: Kos Arunika, Kos Nusa, dan Kos Asri (nama fiktif).
 - Kos baru mendapat ID berikutnya; total kamar awal 0 sebab pengelolaan kamar termasuk modul Farhan.
 
-**Batasan:** Penyimpanan terpisah per browser dan origin (misalnya localhost port 80 berbeda dari Live Server port 5500). Tidak disinkronkan antar perangkat, tidak ada autentikasi, dan tidak otomatis tersimpan ke MySQL.
-
 ## Susunan folder
 ```
 PWUTS_B08_25091397048/
@@ -48,9 +44,5 @@ PWUTS_B08_25091397048/
 ├── assets/
 │   ├── css/style.css
 │   └── js/app.js
-├── README.md
-└── PANDUAN_SINGKAT.txt
+└── README.md
 ```
-
-## Pengumpulan
-Unggah folder/project ke repository GitHub pribadi dengan nama sesuai ketentuan dosen (cek kembali kode kelompok `B08`). Periksa file tidak ganda, navigasi dan form berfungsi, serta jelaskan bahwa mode penyimpanan yang digunakan adalah `localStorage`.
